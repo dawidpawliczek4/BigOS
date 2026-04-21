@@ -1,7 +1,6 @@
 add_executable(test_pmallocator
     test_allocator.c
     ${PROJECT_SOURCE_DIR}/src/kernel/memory_management/physical_memory/allocator.c
-    ${PROJECT_SOURCE_DIR}/tests/stubs/hal_irq_stub.c
 )
 
 target_compile_features(test_pmallocator PUBLIC c_std_23)
